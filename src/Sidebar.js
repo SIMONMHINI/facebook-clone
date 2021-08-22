@@ -6,7 +6,7 @@ import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import EmojiFlagIcon from"@material-ui/icons/EmojiFlags";
 import PeopleIcon from"@material-ui/icons/People";
 import ChatIcon from"@material-ui/icons/Chat";
-import StorefrontIcon from "@material-ui/icons/Storefront";
+import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import ExpandMoreOutlined from "@material-ui/icons/ExpandMoreOutlined";
 
@@ -18,7 +18,7 @@ function Sidebar() {
             <SidebarRow Icon={EmojiFlagIcon} title="Pages"/>
             <SidebarRow  Icon={PeopleIcon} title="Friends"/>
             <SidebarRow Icon={ChatIcon} title="Mesenger" />
-            <SidebarRow icon={StorefrontIcon} title="MarketPlace"/>
+            <SidebarRow Icon={StorefrontIcon} title="Market"/>
             <SidebarRow  Icon={VideoLibraryIcon} title="videos"/>
             <SidebarRow Icon={ExpandMoreOutlined} title="More"/>
         </div>
