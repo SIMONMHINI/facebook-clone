@@ -14,6 +14,6 @@ function Widgets() {
            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
         </iframe></div>
     );
-}
+}   
 
 export default Widgets

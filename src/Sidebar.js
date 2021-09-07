@@ -8,12 +8,13 @@ import PeopleIcon from"@material-ui/icons/People";
 import ChatIcon from"@material-ui/icons/Chat";
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
-import ExpandMoreOutlined from "@material-ui/icons/ExpandMoreOutlined";
-
+import {ExpandMoreOutlined} from "@material-ui/icons/ExpandMoreOutlined";
+import {useStateValue} from "./StateProvider";
 function Sidebar() {
+    const [{user}, dispatch]=useStateValue();
     return (
         <div className="sidebar">
-            <SidebarRow  src="https://web.facebook.com/photo/?fbid=3458212884262836&set=a.380613522022803.jpj" title="Junice Talie"/>
+            <SidebarRow  src={user.photoURL}title={user.displayName}/>
             <SidebarRow  Icon={LocalHospitalIcon} title="COVID-19 Information Center" />
             <SidebarRow Icon={EmojiFlagIcon} title="Pages"/>
             <SidebarRow  Icon={PeopleIcon} title="Friends"/>
